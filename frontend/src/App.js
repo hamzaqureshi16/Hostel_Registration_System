@@ -6,10 +6,11 @@ import ViewApplicant from './Components/ViewApplicant';
 
 function App() {
   return (
-    <><h1 className='text-center bg-success '>Hostel Application System</h1>
+    <>
     <div className="App">
         <Navbar/>
     <div className='App-header'>
+      <h2 className='text-center text-danger'>Comsats Hostel Registration System</h2>
       <Routes>
         <Route path='/AddApplicant' element={<AddApplicant/>}/>
         <Route path='/ViewApplicants' element={<ViewApplicant/>}/>
