@@ -11,7 +11,7 @@ function App() {
         <Navbar/>
     <div className='App-header'>
       <Routes>
-        <Route path='/hostelApplicant' element={<AddApplicant/>}/>
+        <Route path='/AddApplicant' element={<AddApplicant/>}/>
         <Route path='/ViewApplicants' element={<ViewApplicant/>}/>
       </Routes>
        
