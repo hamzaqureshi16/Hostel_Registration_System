@@ -14,10 +14,10 @@ export default function navbar(props) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link to='/AddApplicant' className="nav-link active" aria-current="page" >Apply</Link>
+          <Link to='/hostelApplicants' className="nav-link active" aria-current="page" >Apply</Link>
         </li>
         <li className="nav-item">
-          <Link to='/ViewApplicants' className="nav-link" href="/">View Applicants</Link>
+          <Link to='/ViewApplicants' className="nav-link">View Applicants</Link>
         </li>
       </ul>
      
