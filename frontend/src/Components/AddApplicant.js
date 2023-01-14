@@ -12,12 +12,36 @@ export default function AddApplicant() {
 
  var handleChange = (e) => {
   
-  setApplicanData({...applicantData,[e.target.name]:e.target.value});
+  setApplicanData({...applicantData,[e.target.name]:e.target.value.toUpperCase()});
 }
 var AddDetails = async (e) =>{
+
+  const isEmpty = () =>{
+    
+      if(document.getElementById("StudentName").value === "" || document.getElementById('registration').value === ""){
+        return true;
+      }
+      return false;
+  }
+
   e.preventDefault();
   console.log('submit')
-  await addApplicant(applicantData);
+  if(!isEmpty()){
+    await addApplicant(applicantData).then((result) =>{
+      if(result.status === 200 && typeof(result.data)!= typeof('string')){
+        
+        
+        document.getElementById("StudentName").value = "";
+        document.getElementById('registration').value = "";
+      }
+      else{
+        alert(result.data);
+      }
+    });
+  }
+  else{
+    alert('please fill all the details')
+  }
 
 }
 

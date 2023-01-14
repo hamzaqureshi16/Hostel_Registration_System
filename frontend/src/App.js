@@ -13,7 +13,7 @@ function App() {
       <h2 className='text-center text-danger'>Comsats Hostel Registration System</h2>
       <Routes>
         <Route path='/hostelApplicants' element={<AddApplicant/>}/>
-        <Route path='/ViewApplicants' element={<ViewApplicant/>}/>
+        <Route path='/viewApplicants' element={<ViewApplicant/>}/>
       </Routes>
        
     </div>

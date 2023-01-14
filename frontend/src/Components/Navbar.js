@@ -17,7 +17,7 @@ export default function navbar(props) {
           <Link to='/hostelApplicants' className="nav-link active" aria-current="page" >Apply</Link>
         </li>
         <li className="nav-item">
-          <Link to='/ViewApplicants' className="nav-link">View Applicants</Link>
+          <Link to='/viewApplicants' className="nav-link">View Applicants</Link>
         </li>
       </ul>
      
