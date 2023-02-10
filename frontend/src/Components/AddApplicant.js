@@ -47,7 +47,7 @@ var AddDetails = async (e) =>{
 
 
   return (
-    <div>
+    <div className='App-header'>
       
       <form>
         <div className="form-group">

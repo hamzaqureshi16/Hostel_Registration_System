@@ -5,7 +5,7 @@ import  express  from "express";
 import hostelApplication from './routes/hostelApplication.js';
 
 const app = express();
-const url = "give your own mongoDB url";
+const url = "add you own mongo db url here";
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log('connected to the DB'));
 
